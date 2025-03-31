@@ -47,7 +47,7 @@
   <!-- 広告エリア -->
   <div id="adContainer">
     <!-- admax -->
-    <script src="https://adm.shinobi.jp/s/ced8e79bb00e6ffca12988741a515417"></script>
+    <script src="https://adm.shinobi.jp/s/4f581b1014045c5b745b288d52d0abcd"></script>
     <!-- admax -->
   </div>
 
@@ -58,8 +58,8 @@
     // 必要な離脱時間（ミリ秒）：60秒
     const REQUIRED_LEAVE_TIME = 60 * 1000;
 
-    // 表示したいリンク先をBase64エンコードした文字列（今回の移動先）
-    const encodedLink = "aHR0cHM6Ly9nb2ZpbGUuaW8vZC9BclloaFc=";
+    // 表示したいリンク先をBase64エンコードした文字列（例: "https://gofile.io/d/qCN9ya" の場合）
+    const encodedLink = "aHR0cHM6Ly9nb2ZpbGUuaW8vZC9xQ045eWE=";
 
     // ページが非表示になった（タブを離れた）時刻を記録する変数
     let hiddenTime = null;
@@ -91,7 +91,7 @@
       const anchor = document.createElement("a");
       anchor.href = decodedLink;
       anchor.target = "_blank";
-      // ボタンテキストを「ダウンロードページへ移動する」に変更
+      // ボタンテキストを「ダウンロードページへ移動する」に設定
       anchor.textContent = "ダウンロードページへ移動する";
 
       linkContainer.appendChild(anchor);
